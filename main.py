@@ -1,12 +1,16 @@
 import sys
 if(len(sys.argv)!=3):raise Exception("Non hai inserito tutti i parametri");
 
+from gui import *
+
 from handle import *;
 from generate import *;
 import base64
 from csvHandle import *;
 from parameters import outFile;
 from parameters import inFile;
+
+
 
 matrices = readMatricesFromCSV(inFile)
 for i in matrices:

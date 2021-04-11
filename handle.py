@@ -86,7 +86,7 @@ def matrProd(a, b):
         c = 0
         while(c < dimsB[1]):
             #X[r]=X[r] + ris(a[r],getColumn(b,c));
-            X[r].append((int)(ris(a[r], getColumn(b, c))))
+            X[r].append((ris(a[r], getColumn(b, c))))
             c += 1
         r += 1
     return X
